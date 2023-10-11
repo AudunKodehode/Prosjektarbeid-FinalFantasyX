@@ -2,20 +2,49 @@
   box-sizing: border-box;
   margin: 0;
 }
+:root{
+  --body-color: rgb(39, 39, 39);
+  --nav-color: rgb(39, 39, 39);
+  --section-color: rgb(75, 75, 75);
+}
 body{
-  background-color: rgb(39, 39, 39);
+  background-color: var(--body-color);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 nav{
-  height: 120px;
-  background-color: rgb(62, 62, 62);
+  background-color: var(--nav-color);
+  height: 150px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 2px solid black;
+}
+nav h1{
+  color: white;
+  font-size: 50px;
+}
+nav img{
+  height: 130px;
 }
 section{
-  height: 100vh;
-  background-color: rgb(72, 66, 66);
+  background-color: var(--section-color);
   width: 80%;
   display: flex;
   flex-wrap: wrap;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+#finalFantasyXCard{
+  width: 20%;
+  border: 2px solid black;
+  height: 350px;
+  border-radius: 5px;
+  margin: 3%;
 }
