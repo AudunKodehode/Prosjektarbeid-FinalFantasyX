@@ -1,19 +1,18 @@
-
 const finalFantasyXContainer = document.getElementById("finalFantasyXContainer");
 
 const FFOutput = async () => {
     const characterArray = []
     const response = await fetch(`https://www.moogleapi.com/api/v1/characters`)
-    const data = await response.json();
-    console.log(data);
-    data.forEach(element => {
-        if (element.origin === "Final Fantasy X") {
-            characterArray.push(element)
+    const characters = await response.json();
+    for (let character of characters) {
+        if (character.origin === "Final Fantasy X") {
+            characterArray.push(character)
         }
-    })
-    console.log(characterArray)
-    // finalFantasyXContainer.innerHTML = data
-    // .map(())
+    }
+    let i = 0;
+    while (i < characterArray.length) {
+        console.log(characterArray[i]);
+        i++;
+    }
 }
 FFOutput()
-
