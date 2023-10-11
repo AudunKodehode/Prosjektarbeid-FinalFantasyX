@@ -54,7 +54,7 @@ img{
   max-height: 80%;
   max-width: 80%;
   padding-top: 5px;
-  padding-bottom: 5px;
+  
 }
 
 #text{
@@ -62,4 +62,12 @@ img{
   height: 139px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  
+}
+#textbox{
+  height: 30px;
+
+}
+#textbox:hover{
+  height: fit-content;
 }
