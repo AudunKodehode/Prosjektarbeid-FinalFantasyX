@@ -6,6 +6,7 @@
   --body-color: rgb(39, 39, 39);
   --nav-color: rgb(39, 39, 39);
   --section-color: rgb(75, 75, 75);
+  
 }
 body{
   background-color: var(--body-color);
