@@ -105,6 +105,7 @@ img{
 }
 .description:hover{
   color:black;
+  font-size: 8px;
 }
 
 p{
@@ -112,8 +113,10 @@ p{
 }
 
 
-/* #imageWrapper{
+#imageWrapper{
   max-height: 80%;
   max-width: 80%;
   padding-top: 5px;
-  } */
+  background-color: #1B1B1B;
+  
+  }
