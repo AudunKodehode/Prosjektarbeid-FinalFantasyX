@@ -1,5 +1,4 @@
 const gameSelector = document.getElementById("gameSelector");
-const gameContainer = document.getElementById("gameContainer");
 
 addEventListener("DOMContentLoaded", function () {
     for (let i = 0; i < gameContainer.children.length; i++) {
