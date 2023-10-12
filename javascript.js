@@ -11,6 +11,7 @@ const FFOutput = async () => {
             characterCard.classList.add("character-card");
             characterCard.innerHTML = `
             <h1 class="nameElement">${character.name}<h1>
+            <div id="imageWrapper"><img src="${character.pictures[0].url}" alt=""></div>
             <p class="textElement">${character.description}</p>`
 
             const nameElement = document.createElement("div");
@@ -25,12 +26,11 @@ const FFOutput = async () => {
             const image = document.createElement("img");
             image.src = character.image_url;
 
-
             const textElement = document.createElement("div");
             textElement.id = "textElement";
             textElement.textContent = character.description;
 
-            finalFantasyXCard.appendChild(characterCard);
+            finalFantasyXContainer.appendChild(characterCard);
         }
     }
 }
