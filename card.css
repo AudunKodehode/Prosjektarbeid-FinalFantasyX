@@ -1,69 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   color: black;
-}
-
-/* #finalFantasyXCard{
-    width: 20%;
-    border: 1px solid black;
-    height: 350px;
-    border-radius: 5px;
-    margin: 3%;
-    
-  } */
-
-/* #finalFantasyXCard:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-} */
-
-
-
-/* #nameElement{
-  display: flex;
-  justify-content: center;
-  font-size: 28px;
-  background-color: white;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  height: 40px;
-} */
-
-/* #container{
-  background-color: #1B1B1B;
-  height: 170px;
-} */
-
-/* #image{
-  display: flex;
-  justify-content: center;
-
-  */
- 
-
-
-
-/* #text{
-  background-color: white;
-  height: 139px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
   
-} */
-/* #textbox{
-  height: 30px;
-
 }
-#textbox:hover{
-  height: fit-content;
-} */
 
-/* .cardcontainer {
-  display:grid;
-} */
-
-
-.nameElement{
+.name {
   display: flex;
   justify-content: center;
   font-size: 28px;
@@ -73,50 +15,68 @@
   height: 40px;
 }
 
-.character-card{
-  width: 20%;
-    border: 1px solid black;
-    height: 350px;
-    border-radius: 5px;
-    margin: 3%;
+.character-card {
+  width: 150px;
+  border: 2px solid black;
+  height: 300px;
+  border-radius: 5px;
+  margin: 3%;
+  position: relative;
+  background-color: black;
+
 }
 
-.character-card:hover{
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.character-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-img{
-  max-height: 80%;
-  max-width: 80%;
-  padding-top: 5px;
-  
-}
+
 
 .description {
-  background-color: white;
-  height: 139px;
+  background-color: transparent;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   font-size: 10px;
-  color:transparent
-  
-  
+  color: transparent;
+  position: absolute;
+  top: 0;
+  transform: translateX(73%);
+  border-radius: 3px;
+
+}
+
+.character-card:hover .description {
+  color: black;
+  font-size: 14px;
+  background-color: white;
+  z-index: 1;
+  width: 200px;
+  height: auto;
+
+}
+
+p {
+  font-size: 14px;
+  background-color: black;
+  background-size: auto;
+  color: white;
+}
+
+
+#imageWrapper {
+  width: auto;
+  height: 150px;
+  background-color: #fefefe;
+
 
 
 }
-.description:hover{
-  color:black;
-  font-size: 8px;
+
+#gameContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  background-color: #fefefe;
+
+
 }
-
-p{
-  font-size: 10px;
-}
-
-
-#imageWrapper{
-  max-height: 80%;
-  max-width: 80%;
-  padding-top: 5px;
-  background-color: #1B1B1B;
-  
-  }
