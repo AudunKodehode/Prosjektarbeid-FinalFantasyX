@@ -68,6 +68,7 @@ section{
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: 'Varta', sans-serif;
 }
 :root{
   --body-color: rgb(39, 39, 39);

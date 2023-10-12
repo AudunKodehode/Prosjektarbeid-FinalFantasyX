@@ -80,6 +80,7 @@
     border-radius: 5px;
     margin: 3%;
     position: relative;
+    background-color: black;
 
 }
 
@@ -96,7 +97,7 @@
   color:transparent;
   position: absolute;
   top: 0;
-  transform: translateX(70%);
+  transform: translateX(73%);
   border-radius: 3px;
   
  
@@ -109,12 +110,12 @@
   background-color: white;
   z-index: 1;
   width: 200px;
-  height: 300px;
+  height: auto;
   
 }
 
 p{
-  font-size: 10px;
+  font-size: 14px;
   background-color: black;
   background-size:auto;
   color: white;
