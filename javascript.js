@@ -3,19 +3,6 @@ const gameContainer = document.getElementById("gameContainer");
 const FFOutput = async (gameName, divID) => {
     const response = await fetch("https://www.moogleapi.com/api/v1/characters")
     const characters = await response.json();
-    // <div id="Final Fantasy"></div>
-    // <div></div>
-    // <div></div>
-    // <div></div>
-    // <div></div>
-    // <div></div>
-    // <div></div>
-    // <div></div>
-    // <div></div>
-    // <div></div>
-    // <div></div>
-    // <div></div>
-    // <div></div>
     for (let character of characters) {
         if (character.origin === gameName) {
             const characterCard = document.createElement("div");
