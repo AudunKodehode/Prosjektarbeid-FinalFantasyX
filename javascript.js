@@ -2,12 +2,16 @@ const gameContainer = document.getElementById("gameContainer");
 const gameSelector = document.getElementById("gameSelector");
 
 addEventListener("DOMContentLoaded", function () {
+initiate();
+    })
+function initiate(){
     for (let i = 0; i < gameContainer.children.length; i++) {
         gameContainer.children[i].style.display = "none";
     }
-    document.getElementById(gameSelector.value).style.display = "none";
-    
-    })
+    document.getElementById(gameSelector.value).style.display = "grid";
+}
+
+
 
 gameSelector.addEventListener("change", function () {
     for (let i = 0; i < gameContainer.children.length; i++) {
@@ -15,8 +19,10 @@ gameSelector.addEventListener("change", function () {
     }
     gameContainer.children[gameSelector.value].style.display = "";
 })
-
+let gameCount = 0; 
 const FFOutput = async (gameName, divID) => {
+    gameCount ++;
+
     const response = await fetch("https://www.moogleapi.com/api/v1/characters")
     const characters = await response.json();
     const gameTypeContainer = document.createElement("div");
@@ -24,20 +30,41 @@ const FFOutput = async (gameName, divID) => {
     for (let character of characters) {
         if (character.origin === gameName) {
             const characterCard = document.createElement("div");
-            characterCard.classList.add(`${divID}-card`)
-            characterCard.innerHTML = `
-            <h1 class="name">${character.name}<h1>
-            <div id="imageWrapper"><img src="${character.pictures[0].url}" alt=""></div>
-            <p class="age">Age: ${character.age}</p>
-            <p class="gender">Gender: ${character.gender}</p>
-            <p class="height">Height: ${character.height}</p>
-            <p class="job">Job: ${character.job}</p>
-            <p class="race">Race: ${character.race}</p>
-            <p class="description">${character.description}</p>`
+            characterCard.classList.add(`${divID}-card`);
+        
+            // Use a try-catch block to handle potential errors when setting the image src
+            try {
+                characterCard.innerHTML = `
+                    <h1 class="name">${character.name}</h1>
+                    <div id="imageWrapper"><img src="${character.pictures[0].url}" alt=""></div>
+                    <p class="age">Age: ${character.age}</p>
+                    <p class="gender">Gender: ${character.gender}</p>
+                    <p class="height">Height: ${character.height}</p>
+                    <p class="job">Job: ${character.job}</p>
+                    <p class="race">Race: ${character.race}</p>
+                    <p class="description">${character.description}</p>`;
+            } catch (error) {
+                // Handle the error here, you can log it or display a default image
+                console.error(`Error setting image src: ${error}`);
+                characterCard.innerHTML = `
+                    <h1 class="name">${character.name}</h1>
+                    <div id="imageWrapper"><img src="/public/default.png" alt=""></div>
+                    <p class="age">Age: ${character.age}</p>
+                    <p class="gender">Gender: ${character.gender}</p>
+                    <p class="height">Height: ${character.height}</p>
+                    <p class="job">Job: ${character.job}</p>
+                    <p class="race">Race: ${character.race}</p>
+                    <p class="description">${character.description}</p>`;
+            }
+        
             gameTypeContainer.appendChild(characterCard);
         }
+
     }
     gameContainer.appendChild(gameTypeContainer);
+    if (gameCount == 13){
+        initiate();
+    }
 }
 
 FFOutput("Final Fantasy", "ff");
@@ -53,7 +80,6 @@ FFOutput("Final Fantasy X", "ffX");
 FFOutput("Final Fantasy XII", "ffXII");
 FFOutput("Final Fantasy XIII", "ffXIII");
 FFOutput("Final Fantasy XV", "ffXV");
-
 
 
 
