@@ -36,12 +36,10 @@ p {
 }
 
 
-#gameContainer #imageWrapper {
+#imageWrapper {
   width: auto;
   height: 150px;
   background-color: #fefefe;
-
-
 
 }
 
@@ -49,7 +47,7 @@ p {
   height: 100%;
   width: auto;
   object-fit: contain;
-  object-position: center;
+  object-position:center;
   background-color: #fefefe;
 }
 
@@ -59,7 +57,7 @@ p {
   border: 2px solid black;
   height: 300px;
   border-radius: 5px;
-  margin: 3%;
+  margin: 1px;
   position: relative;
   background-color: black;
 
@@ -67,7 +65,7 @@ p {
 
 .ff-card:hover,.ffII-card:hover,.ffIII-card:hover,.ffIV-card:hover,.ffV-card:hover,.ffVI-card:hover,.ffVII-card:hover,.ffVIII-card:hover,.ffIX-card:hover,.ffX-card:hover,.ffXII-card:hover,.ffXIII-card:hover,.ffXV-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  scale:1.1
+  
 }
 
  .ff-card:hover .description,.ffII-card:hover .description,.ffIII-card:hover .description,.ffIV-card:hover .description,.ffV-card:hover .description,.ffVI-card:hover .description,.ffVII-card:hover .description,.ffVIII-card:hover .description,.ffIX-card:hover .description,.ffX-card:hover .description,.ffXII-card:hover .description,.ffXIII-card:hover .description,.ffXV-card:hover .description 
@@ -81,7 +79,7 @@ p {
 
 }
 
-/* #gameContainer{
+#gameContainer{
     margin-top: 50px;
       background-color: var(--section-color);
       width: 80%;
@@ -90,4 +88,10 @@ p {
       justify-content: center;
       flex-wrap: wrap;
       gap: 20px;
-    } */
+    }
+
+ #ffContainer,#ffIIContainer,#ffIIIContainer,#ffIVContainer, #ffVContainer, #ffVIContainer, #ffVIIContainer, #ffVIIIContainer, #ffIXContainer, #ffXContainer, #ffXIIContainer, #ffXIIIContainer, #ffXVContainer {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+ }

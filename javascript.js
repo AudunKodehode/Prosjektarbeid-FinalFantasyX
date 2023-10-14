@@ -5,7 +5,7 @@ addEventListener("DOMContentLoaded", function () {
     for (let i = 0; i < gameContainer.children.length; i++) {
         gameContainer.children[i].style.display = "none";
     }
-    document.getElementById(gameSelector.value).style.display = "flex";
+    document.getElementById(gameSelector.value).style.display = "none";
     
     })
 
@@ -13,7 +13,7 @@ gameSelector.addEventListener("change", function () {
     for (let i = 0; i < gameContainer.children.length; i++) {
         gameContainer.children[i].style.display = "none";
     }
-    gameContainer.children[gameSelector.value].style.display = "flex";
+    gameContainer.children[gameSelector.value].style.display = "";
 })
 
 const FFOutput = async (gameName, divID) => {
@@ -53,3 +53,7 @@ FFOutput("Final Fantasy X", "ffX");
 FFOutput("Final Fantasy XII", "ffXII");
 FFOutput("Final Fantasy XIII", "ffXIII");
 FFOutput("Final Fantasy XV", "ffXV");
+
+
+
+
