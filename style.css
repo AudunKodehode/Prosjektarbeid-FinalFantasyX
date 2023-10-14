@@ -52,13 +52,12 @@ section {
   margin-top: 50px;
   background-color: var(--section-color);
   width: 80%;
-  border: 2px solid black;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  height: fit-content;
 }
-
 
 @media screen and (max-width: 735px) {
   nav h1 {
