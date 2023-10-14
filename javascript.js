@@ -6,8 +6,8 @@ addEventListener("DOMContentLoaded", function () {
         gameContainer.children[i].style.display = "none";
     }
     document.getElementById(gameSelector.value).style.display = "flex";
-    
-    })
+
+})
 
 gameSelector.addEventListener("change", function () {
     for (let i = 0; i < gameContainer.children.length; i++) {
@@ -40,16 +40,16 @@ const FFOutput = async (gameName, divID) => {
     gameContainer.appendChild(gameTypeContainer);
 }
 
-FFOutput("Final Fantasy", "ff");
-FFOutput("Final Fantasy II", "ffII");
-FFOutput("Final Fantasy III", "ffIII");
-FFOutput("Final Fantasy IV", "ffIV");
-FFOutput("Final Fantasy V", "ffV");
-FFOutput("Final Fantasy VI", "ffVI");
-FFOutput("Final Fantasy VII", "ffVII");
-FFOutput("Final Fantasy VIII", "ffVIII");
-FFOutput("Final Fantasy IX", "ffIX");
-FFOutput("Final Fantasy X", "ffX");
-FFOutput("Final Fantasy XII", "ffXII");
-FFOutput("Final Fantasy XIII", "ffXIII");
-FFOutput("Final Fantasy XV", "ffXV");
+FFOutput("Final Fantasy", "ffContainer");
+FFOutput("Final Fantasy II", "ffIIContainer");
+FFOutput("Final Fantasy III", "ffIIIContainer");
+FFOutput("Final Fantasy IV", "ffIVContainer");
+FFOutput("Final Fantasy V", "ffVContainer");
+FFOutput("Final Fantasy VI", "ffVIContainer");
+FFOutput("Final Fantasy VII", "ffVIIContainer");
+FFOutput("Final Fantasy VIII", "ffVIIIContainer");
+FFOutput("Final Fantasy IX", "ffIXContainer");
+FFOutput("Final Fantasy X", "ffXContainer");
+FFOutput("Final Fantasy XII", "ffXIIContainer");
+FFOutput("Final Fantasy XIII", "ffXIIIContainer");
+FFOutput("Final Fantasy XV", "ffXVContainer");
