@@ -36,16 +36,16 @@ p {
 }
 
 
-#imageWrapper {
+.section #imageWrapper {
   width: auto;
   height: 150px;
   background-color: #fefefe;
 
 }
 
-#gameContainer img {
+.section img {
   height: 100%;
-  width: auto;
+  width: 100%;
   object-fit: contain;
   object-position:center;
   background-color: #fefefe;
