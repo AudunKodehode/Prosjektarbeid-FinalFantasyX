@@ -25,6 +25,8 @@
   top: 0;
   transform: translateX(73%);
   border-radius: 3px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 
 }
 
@@ -76,6 +78,7 @@ p {
   z-index: 1;
   width: 200px;
   height: auto;
+  opacity: 1;
 
 }
 
