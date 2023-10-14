@@ -3,22 +3,26 @@
   margin: 0;
   font-family: 'Varta', sans-serif;
 }
-:root{
+
+:root {
   --body-color: rgb(39, 39, 39);
   --nav-color: rgb(39, 39, 39);
   --section-color: rgb(75, 75, 75);
-  
+
 }
-body{
+
+body {
   background-color: var(--body-color);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 html {
   scroll-behavior: smooth;
 }
-nav{
+
+nav {
   background-color: var(--nav-color);
   height: 150px;
   width: 100vw;
@@ -29,14 +33,22 @@ nav{
   padding-right: 5%;
   border: 2px solid black;
 }
-nav h1{
+
+nav h1 {
   color: white;
   font-size: 50px;
 }
-nav img{
+
+nav img {
   height: 130px;
 }
-section{
+#gameSelector {
+  font-size: 20px;
+  margin: 40px;
+  background-color: rgb(214, 214, 214);
+}
+
+section {
   margin-top: 50px;
   background-color: var(--section-color);
   width: 80%;
@@ -47,36 +59,38 @@ section{
   gap: 20px;
 }
 
-#finalFantasyXCard{
-  width: 20%;
-  border: 2px solid black;
-  height: 350px;
-  border-radius: 5px;
-  margin: 3%;
-}
-@media screen and (max-width: 735px ) {
-  nav h1{
+
+@media screen and (max-width: 735px) {
+  nav h1 {
     font-size: 40px;
   }
-  nav img{
+
+  nav img {
     height: 100px;
   }
 }
-@media screen and (max-width: 700px ) {
-  
-section{
-  width: 100%;
-}
+
+@media screen and (max-width: 700px) {
+
+  section {
+    width: 100%;
+  }
 
 }
-@media screen and (max-width: 635px ) {
-  nav h1{
+
+@media screen and (max-width: 635px) {
+  nav h1 {
     font-size: 25px;
   }
-  nav img{
+
+  nav img {
     height: 130px;
   }
-  nav img{
+
+  nav img {
     height: 75px;
   }
 }
+
+
+
