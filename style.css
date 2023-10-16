@@ -1,4 +1,4 @@
-* {
+*{
   box-sizing: border-box;
   margin: 0;
   font-family: 'Varta', sans-serif;
@@ -37,6 +37,7 @@ nav {
 nav h1 {
   color: white;
   font-size: 50px;
+  font-weight: 700;
 }
 
 nav img {
