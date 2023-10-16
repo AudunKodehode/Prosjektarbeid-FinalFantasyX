@@ -45,7 +45,13 @@ nav img {
 #gameSelector {
   font-size: 20px;
   margin: 40px;
-  background-color: rgb(214, 214, 214);
+  padding: 5px;
+  background: linear-gradient(to bottom, #04009d 0%,#06004d 100%);
+  color: white;
+}
+option{
+  background: #04009d;
+  color: white;
 }
 
 section {
