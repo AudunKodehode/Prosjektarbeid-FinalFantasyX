@@ -68,9 +68,9 @@ p {
 .ff-card:hover,.ffII-card:hover,.ffIII-card:hover,.ffIV-card:hover,.ffV-card:hover,.ffVI-card:hover,.ffVII-card:hover,.ffVIII-card:hover,.ffIX-card:hover,.ffX-card:hover,.ffXII-card:hover,.ffXIII-card:hover,.ffXV-card:hover {
    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-#gameContainer * p.description:hover{
+/* #gameContainer * p.description:hover{
   display: none;
-} 
+}  */
 
  .ff-card:hover .description,.ffII-card:hover .description,.ffIII-card:hover .description,.ffIV-card:hover .description,.ffV-card:hover .description,.ffVI-card:hover .description,.ffVII-card:hover .description,.ffVIII-card:hover .description,.ffIX-card:hover .description,.ffX-card:hover .description,.ffXII-card:hover .description,.ffXIII-card:hover .description,.ffXV-card:hover .description 
  {
@@ -82,8 +82,9 @@ p {
   padding: 6px;
   z-index: 1;
   width: 200px;
-  height: auto;
+  height: 312px;
   opacity: 1;
+  overflow: auto;
 
 }
 #gameSelector{
