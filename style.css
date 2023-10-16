@@ -58,7 +58,11 @@ section {
   gap: 20px;
   height: fit-content;
 }
-
+@media screen and (max-width: 800px) {
+  section {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 735px) {
   nav h1 {
     font-size: 40px;
@@ -69,13 +73,6 @@ section {
   }
 }
 
-@media screen and (max-width: 700px) {
-
-  section {
-    width: 100%;
-  }
-
-}
 
 @media screen and (max-width: 635px) {
   nav h1 {
@@ -92,4 +89,13 @@ section {
 }
 
 
+@media screen and (max-width: 375px) {
+  nav {
+    flex-direction: column;
+    height: fit-content;
+  }
+  #gameSelector{
+    margin-bottom: 20px;
+  }
+}
 
