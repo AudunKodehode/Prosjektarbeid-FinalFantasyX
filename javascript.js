@@ -2,9 +2,9 @@ const gameContainer = document.getElementById("gameContainer");
 const gameSelector = document.getElementById("gameSelector");
 
 addEventListener("DOMContentLoaded", function () {
-// initiate();
-    })
-function initiate(){
+    // initiate();
+})
+function initiate() {
     for (let i = 0; i < gameContainer.children.length; i++) {
         gameContainer.children[i].style.display = "none";
     }
@@ -19,9 +19,9 @@ gameSelector.addEventListener("change", function () {
     }
     gameContainer.children[gameSelector.value].style.display = "";
 })
-let gameCount = 0; 
+let gameCount = 0;
 const FFOutput = async (gameName, divID) => {
-    gameCount ++;
+    gameCount++;
 
     const response = await fetch("https://www.moogleapi.com/api/v1/characters")
     const characters = await response.json();
@@ -31,7 +31,7 @@ const FFOutput = async (gameName, divID) => {
         if (character.origin === gameName) {
             const characterCard = document.createElement("div");
             characterCard.classList.add(`${divID}-card`);
-        
+
             // Use a try-catch block to handle potential errors when setting the image src
             try {
                 characterCard.innerHTML = `
@@ -55,13 +55,13 @@ const FFOutput = async (gameName, divID) => {
                     <p class="race">Race: ${character.race}</p>
                     <p class="description">${character.description}</p>`;
             }
-        
+
             gameTypeContainer.appendChild(characterCard);
         }
 
     }
     gameContainer.appendChild(gameTypeContainer);
-    if (gameCount == 13){
+    if (gameCount == 13) {
         initiate();
     }
 }
@@ -81,8 +81,5 @@ FFOutput("Final Fantasy X", "ffX");
 FFOutput("Final Fantasy XII", "ffXII");
 FFOutput("Final Fantasy XIII", "ffXIII");
 FFOutput("Final Fantasy XV", "ffXV");
-
-
-
 
 

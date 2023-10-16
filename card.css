@@ -104,6 +104,11 @@ p {
    grid-template-columns: repeat(3, 1fr);
    gap: 20px;
  }
+ @media screen and (max-width: 910px) {
+  #gameContainer * p.description:hover{
+    display: block;
+  } 
+}
  @media screen and (max-width: 635px) {
   #ffContainer,#ffIIContainer,#ffIIIContainer,#ffIVContainer, #ffVContainer, #ffVIContainer, #ffVIIContainer, #ffVIIIContainer, #ffIXContainer, #ffXContainer, #ffXIIContainer, #ffXIIIContainer, #ffXVContainer {
     display: grid;
