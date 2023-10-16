@@ -48,6 +48,9 @@ nav img {
   margin: 40px;
   background-color: rgb(214, 214, 214);
 }
+#gameContainer{
+padding-bottom: 500px;
+}
 
 section {
   margin-top: 50px;
@@ -58,6 +61,11 @@ section {
   flex-wrap: wrap;
   gap: 20px;
   height: fit-content;
+}
+@media screen and (max-width: 910px) {
+  #gameContainer div div p.description {
+    transform:translateX(-15%)
+  }
 }
 @media screen and (max-width: 800px) {
   section {
