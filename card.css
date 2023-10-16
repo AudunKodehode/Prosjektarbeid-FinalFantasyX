@@ -23,6 +23,132 @@
   color: transparent;
   position: absolute;
   top: 0;
+  transform: translateX(74%);
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+}
+
+p {
+  font-size: 14px;
+  background-color: black;
+  background-size: auto;
+  color: white;
+}
+
+
+.section #imageWrapper {
+  width: auto;
+  height: 150px;
+  background-color: #fefefe;
+
+}
+
+.section img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position:center;
+  background-color: #fefefe;
+}
+
+.ff-card, .ffII-card, .ffIII-card, .ffIV-card, .ffV-card, .ffVI-card, .ffVII-card, .ffVIII-card, .ffIX-card, .ffX-card, .ffXII-card, .ffXIII-card, .ffXV-card  
+{
+  width: 150px;
+  border: 2px solid black;
+  height: 315px;
+  border-radius: 5px;
+  margin: 1px;
+  position: relative;
+  background-color: black;
+
+}
+
+.ff-card:hover,.ffII-card:hover,.ffIII-card:hover,.ffIV-card:hover,.ffV-card:hover,.ffVI-card:hover,.ffVII-card:hover,.ffVIII-card:hover,.ffIX-card:hover,.ffX-card:hover,.ffXII-card:hover,.ffXIII-card:hover,.ffXV-card:hover {
+   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+#gameContainer * p.description:hover{
+  display: none;
+} 
+
+ .ff-card:hover .description,.ffII-card:hover .description,.ffIII-card:hover .description,.ffIV-card:hover .description,.ffV-card:hover .description,.ffVI-card:hover .description,.ffVII-card:hover .description,.ffVIII-card:hover .description,.ffIX-card:hover .description,.ffX-card:hover .description,.ffXII-card:hover .description,.ffXIII-card:hover .description,.ffXV-card:hover .description 
+ {
+  color: white;
+  font-size: 14px;
+  background-color: #040193;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 6px;
+  z-index: 1;
+  width: 200px;
+  height: auto;
+  opacity: 1;
+
+}
+#gameSelector{
+  background-color: #040193;
+  color: white;
+  padding: 5px;
+}
+option {
+  color: white;
+}
+#gameContainer{
+    margin-top: 50px;
+      background-color: var(--section-color);
+      width: 80%;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-top: 20px;
+    }
+
+ #ffContainer,#ffIIContainer,#ffIIIContainer,#ffIVContainer, #ffVContainer, #ffVIContainer, #ffVIIContainer, #ffVIIIContainer, #ffIXContainer, #ffXContainer, #ffXIIContainer, #ffXIIIContainer, #ffXVContainer {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+ }
+ @media screen and (max-width: 635px) {
+  #ffContainer,#ffIIContainer,#ffIIIContainer,#ffIVContainer, #ffVContainer, #ffVIContainer, #ffVIIContainer, #ffVIIIContainer, #ffIXContainer, #ffXContainer, #ffXIIContainer, #ffXIIIContainer, #ffXVContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 410px) {
+  #ffContainer,#ffIIContainer,#ffIIIContainer,#ffIVContainer, #ffVContainer, #ffVIContainer, #ffVIIContainer, #ffVIIIContainer, #ffIXContainer, #ffXContainer, #ffXIIContainer, #ffXIIIContainer, #ffXVContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 40px;
+}
+
+.description {
+  background-color: transparent;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 10px;
+  color: transparent;
+  position: absolute;
+  top: 0;
   transform: translateX(73%);
   border-radius: 3px;
   opacity: 0;
