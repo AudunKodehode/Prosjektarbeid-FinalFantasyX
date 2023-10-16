@@ -2,7 +2,7 @@ const gameContainer = document.getElementById("gameContainer");
 const gameSelector = document.getElementById("gameSelector");
 
 addEventListener("DOMContentLoaded", function () {
-initiate();
+// initiate();
     })
 function initiate(){
     for (let i = 0; i < gameContainer.children.length; i++) {
@@ -45,7 +45,6 @@ const FFOutput = async (gameName, divID) => {
                     <p class="description">${character.description}</p>`;
             } catch (error) {
                 // Handle the error here, you can log it or display a default image
-                console.error(`Error setting image src: ${error}`);
                 characterCard.innerHTML = `
                     <h1 class="name">${character.name}</h1>
                     <div id="imageWrapper"><img src="/public/default.png" alt=""></div>
@@ -67,7 +66,9 @@ const FFOutput = async (gameName, divID) => {
     }
 }
 
-FFOutput("Final Fantasy", "ff");
+FFOutput("Final Fantasy", "ff").then(() => {
+    initiate();
+})
 FFOutput("Final Fantasy II", "ffII");
 FFOutput("Final Fantasy III", "ffIII");
 FFOutput("Final Fantasy IV", "ffIV");
