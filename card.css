@@ -86,7 +86,14 @@ p {
   opacity: 1;
 
 }
-
+#gameSelector{
+  background-color: #040193;
+  color: white;
+  padding: 5px;
+}
+option {
+  color: white;
+}
 #gameContainer{
     margin-top: 50px;
       background-color: var(--section-color);
