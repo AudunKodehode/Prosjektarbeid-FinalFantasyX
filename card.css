@@ -71,7 +71,6 @@ p {
 #gameContainer * p.description:hover{
   display: none;
 } 
-
  .ff-card:hover .description,.ffII-card:hover .description,.ffIII-card:hover .description,.ffIV-card:hover .description,.ffV-card:hover .description,.ffVI-card:hover .description,.ffVII-card:hover .description,.ffVIII-card:hover .description,.ffIX-card:hover .description,.ffX-card:hover .description,.ffXII-card:hover .description,.ffXIII-card:hover .description,.ffXV-card:hover .description 
  {
   color: white;
