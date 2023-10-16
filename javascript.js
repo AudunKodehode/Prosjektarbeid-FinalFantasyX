@@ -26,7 +26,6 @@ const FFOutput = async (gameName, divID) => {
     if (response == ""){
         response = await fetch("https://www.moogleapi.com/api/v1/characters")
     }
-
     const characters = await response.json();
     const gameTypeContainer = document.createElement("div");
     gameTypeContainer.id = `${divID}Container`;
