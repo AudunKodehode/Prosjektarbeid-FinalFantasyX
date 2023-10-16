@@ -110,12 +110,6 @@ nav img {
 
 }
 
-body {
-  background-color: var(--body-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 html {
   scroll-behavior: smooth;

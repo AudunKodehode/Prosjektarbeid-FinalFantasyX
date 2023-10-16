@@ -20,10 +20,12 @@ gameSelector.addEventListener("change", function () {
     gameContainer.children[gameSelector.value].style.display = "";
 })
 let gameCount = 0;
+let response = "";
 const FFOutput = async (gameName, divID) => {
     gameCount++;
-
-    const response = await fetch("https://www.moogleapi.com/api/v1/characters")
+    if (response == ""){
+        response = await fetch("https://www.moogleapi.com/api/v1/characters")
+    }
     const characters = await response.json();
     const gameTypeContainer = document.createElement("div");
     gameTypeContainer.id = `${divID}Container`;
@@ -34,6 +36,7 @@ const FFOutput = async (gameName, divID) => {
 
             // Use a try-catch block to handle potential errors when setting the image src
             try {
+                characterCard.id = `${divID}-${character.name}`;
                 characterCard.innerHTML = `
                     <h1 class="name">${character.name}</h1>
                     <div id="imageWrapper"><img src="${character.pictures[0].url}" alt=""></div>
@@ -45,6 +48,7 @@ const FFOutput = async (gameName, divID) => {
                     <p class="description">${character.description}</p>`;
             } catch (error) {
                 // Handle the error here, you can log it or display a default image
+                characterCard.id = `${divID}-${character.name}`;
                 characterCard.innerHTML = `
                     <h1 class="name">${character.name}</h1>
                     <div id="imageWrapper"><img src="/public/default.png" alt=""></div>
@@ -58,7 +62,7 @@ const FFOutput = async (gameName, divID) => {
 
             gameTypeContainer.appendChild(characterCard);
         }
-
+        
     }
     gameContainer.appendChild(gameTypeContainer);
     if (gameCount == 13) {
