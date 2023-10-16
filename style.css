@@ -2,20 +2,27 @@
   box-sizing: border-box;
   margin: 0;
   font-family: 'Varta', sans-serif;
-  
 }
-:root{
+
+:root {
   --body-color: rgb(39, 39, 39);
   --nav-color: rgb(39, 39, 39);
   --section-color: rgb(75, 75, 75);
+
 }
-body{
+
+body {
   background-color: var(--body-color);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-nav{
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
   background-color: var(--nav-color);
   height: 150px;
   width: 100vw;
@@ -26,119 +33,64 @@ nav{
   padding-right: 5%;
   border: 2px solid black;
 }
-nav h1{
+
+nav h1 {
   color: white;
   font-size: 50px;
   font-weight: 700;
 }
-nav img{
+
+nav img {
   height: 130px;
 }
-section{
-  background-color: var(--section-color);
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  border: 2px solid black;
-  display: flex;
-  justify-content: center;
+#gameSelector {
+  font-size: 20px;
+  margin: 40px;
+  background-color: rgb(214, 214, 214);
 }
 
-#finalFantasyXCard{
-  width: 20%;
-  border: 2px solid black;
-  height: 350px;
-  border-radius: 5px;
-  margin: 3%;
-}
-
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); Create 3 equal columns
-  gap: 20px; 
-  
-}
-
-.character-card {
-  /* border: 1px solid #ccc; */
-
-
-
-  /*Auduns code*/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: 'Varta', sans-serif;
-}
-:root{
-  --body-color: rgb(39, 39, 39);
-  --nav-color: rgb(39, 39, 39);
-  --section-color: rgb(75, 75, 75);
-  
-}
-body{
-  background-color: var(--body-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-html {
-  scroll-behavior: smooth;
-}
-nav{
-  background-color: var(--nav-color);
-  height: 150px;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 5%;
-  padding-right: 5%;
-  border: 2px solid black;
-}
-nav h1{
-  color: white;
-  font-size: 50px;
-}
-nav img{
-  height: 130px;
-}
-section{
+section {
   margin-top: 50px;
   background-color: var(--section-color);
   width: 80%;
-  border: 2px solid black;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  height: fit-content;
 }
 
-
-@media screen and (max-width: 735px ) {
-  nav h1{
+@media screen and (max-width: 735px) {
+  nav h1 {
     font-size: 40px;
   }
-  nav img{
+
+  nav img {
     height: 100px;
   }
 }
-@media screen and (max-width: 700px ) {
-  
-section{
-  width: 100%;
-}
+
+@media screen and (max-width: 700px) {
+
+  section {
+    width: 100%;
+  }
 
 }
-@media screen and (max-width: 635px ) {
-  nav h1{
+
+@media screen and (max-width: 635px) {
+  nav h1 {
     font-size: 25px;
   }
-  nav img{
+
+  nav img {
     height: 130px;
   }
-  nav img{
+
+  nav img {
     height: 75px;
   }
 }
+
+
 
