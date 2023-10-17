@@ -1,14 +1,13 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
-  font-family: 'Varta', sans-serif;
+  font-family: "Varta", sans-serif;
 }
 
 :root {
   --body-color: rgb(39, 39, 39);
   --nav-color: rgb(39, 39, 39);
   --section-color: rgb(75, 75, 75);
-
 }
 
 body {
@@ -16,12 +15,11 @@ body {
   flex-direction: column;
   align-items: center;
   background-image: url(public/background1small.jpg);
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   overflow-x: hidden;
 }
-  
 
 html {
   scroll-behavior: smooth;
@@ -36,7 +34,6 @@ nav {
   justify-content: center;
   padding-left: 5%;
   padding-right: 5%;
-  
 }
 
 nav h1 {
@@ -67,7 +64,7 @@ nav img {
 @media screen and (max-width: 1000px) {
   body {
     background-image: url(/public/backgroundMQ1000.jpg);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: right;
@@ -88,7 +85,6 @@ nav img {
   }
 }
 
-
 @media screen and (max-width: 635px) {
   nav h1 {
     font-size: 25px;
@@ -103,13 +99,12 @@ nav img {
   }
 }
 
-
 @media screen and (max-width: 375px) {
   nav {
     flex-direction: column;
     height: fit-content;
   }
-  #gameSelector{
+  #gameSelector {
     margin-bottom: 20px;
   }
 }
