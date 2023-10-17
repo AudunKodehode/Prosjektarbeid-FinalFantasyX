@@ -59,11 +59,11 @@ nav img {
   gap: 20px;
   height: fit-content;
   border-radius: 40px;
-  margin-bottom: 250px;
+  margin-bottom: 280px;
 }
 @media screen and (max-width: 1000px) {
   body {
-    background-image: url(/public/backgroundMQ1000.jpg);
+    background-image: url(public/backgroundMQ1000.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
