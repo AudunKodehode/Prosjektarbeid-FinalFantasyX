@@ -216,9 +216,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(public/background1.jpg);
-  background-repeat:no-repeat;
-  background-attachment: fixed;
 }
 
 html {
@@ -234,7 +231,7 @@ nav {
   justify-content: center;
   padding-left: 5%;
   padding-right: 5%;
-  border: 2px solid white;
+  border: 2px solid black;
 }
 
 nav h1 {
@@ -258,13 +255,12 @@ padding-bottom: 500px;
 section {
   margin-top: 50px;
   background-color: var(--section-color);
-  width: 38%;
+  width: 80%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
   height: fit-content;
-  border-radius: 40px;
 }
 @media screen and (max-width: 910px) {
   #gameContainer div div p.description {
@@ -312,8 +308,3 @@ section {
   }
 }
 
-@media screen and (max-width: 910px) {
-  #gameContainer div div p.description {
-    transform:translateX(-15%)
-  }
-}
