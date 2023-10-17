@@ -96,9 +96,7 @@ option {
 }
 #gameContainer{
     margin-top: 50px;
-      background-color: var(--section-color);
       width: 80%;
-      border: 2px solid black;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
