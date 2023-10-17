@@ -1,21 +1,32 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Varta", sans-serif;
 }
-:root{
+
+:root {
   --body-color: rgb(39, 39, 39);
   --nav-color: rgb(39, 39, 39);
   --section-color: rgb(75, 75, 75);
-  
 }
-body{
-  background-color: var(--body-color);
+
+body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(public/background1small.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
 }
-nav{
-  background-color: var(--nav-color);
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   height: 150px;
   width: 100vw;
   display: flex;
@@ -23,29 +34,77 @@ nav{
   justify-content: center;
   padding-left: 5%;
   padding-right: 5%;
-  border: 2px solid black;
 }
-nav h1{
+
+nav h1 {
   color: white;
   font-size: 50px;
 }
-nav img{
+
+nav img {
   height: 130px;
 }
-section{
-  background-color: var(--section-color);
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  border: 2px solid black;
-  display: flex;
-  justify-content: center;
+#gameSelector {
+  font-size: 20px;
+  margin: 40px;
+  background-color: rgb(214, 214, 214);
 }
 
-#finalFantasyXCard{
-  width: 20%;
-  border: 2px solid black;
-  height: 350px;
-  border-radius: 5px;
-  margin: 3%;
+.section {
+  margin-top: 50px;
+  width: 38%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: fit-content;
+  border-radius: 40px;
+  margin-bottom: 250px;
+}
+@media screen and (max-width: 1000px) {
+  body {
+    background-image: url(/public/backgroundMQ1000.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right;
+  }
+}
+@media screen and (max-width: 800px) {
+  section {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 735px) {
+  nav h1 {
+    font-size: 40px;
+  }
+
+  nav img {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  nav h1 {
+    font-size: 25px;
+  }
+
+  nav img {
+    height: 130px;
+  }
+
+  nav img {
+    height: 75px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  nav {
+    flex-direction: column;
+    height: fit-content;
+  }
+  #gameSelector {
+    margin-bottom: 20px;
+  }
 }

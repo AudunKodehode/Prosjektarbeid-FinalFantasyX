@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="card.css" />
     <script src="javascript.js" defer></script>
-    <!-- <link rel="icon" type="image/x-icon" href="favicon.png" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varta:wght@400;700&display=swap" rel="stylesheet">
     <title>Final Fantasy API</title>
   </head>
   <body>
@@ -13,17 +16,28 @@
       <div class="logoContainer">
         <img src="public/logo.png" alt="" />
       </div>
-      
       <h1>Final Fantasy website</h1>
+      <div class="dropDown">
+        <select name="gameSelector" id="gameSelector">
+        <option value="ffContainer">Final Fantasy</option>
+        <option value="ffIIContainer">Final Fantasy II</option>
+        <option value="ffIIIContainer">Final Fantasy III</option>
+        <option value="ffIVContainer">Final Fantasy IV</option>
+        <option value="ffVContainer">Final Fantasy V</option>
+        <option value="ffVIContainer">Final Fantasy VI</option>
+        <option value="ffVIIContainer">Final Fantasy VII</option>
+        <option value="ffVIIIContainer">Final Fantasy VIII</option>
+        <option value="ffIXContainer">Final Fantasy IX</option>
+        <option value="ffXContainer">Final Fantasy X</option>
+        <option value="ffXIIContainer">Final Fantasy XII</option>
+        <option value="ffXIIIContainer">Final Fantasy XIII</option>
+        <option value="ffXVContainer">Final Fantasy XV</option>
+      </select>
+      </div>
     </nav>
-    <section id="finalFantasyXContainer">
-
-      <div id="finalFantasyXCard"></div>
-      <div id="finalFantasyXCard"></div>
-      <div id="finalFantasyXCard"></div>
-      
-
-
-    </section>
+    <section class="section">
+    <div id="gameContainer">
+      </section>
+    </div>
   </body>
 </html>
