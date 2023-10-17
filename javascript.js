@@ -52,7 +52,7 @@ const FFOutput = async (gameName, divID) => {
                 characterCard.id = `${divID}-${character.name}`;
                 characterCard.innerHTML = `
                     <h1 class="name">${character.name}</h1>
-                    <div id="imageWrapper"><img src="/public/default.png" alt=""></div>
+                    <div id="imageWrapper"><img src="public/default.png" alt=""></div>
                     <p class="age">Age: ${character.age}</p>
                     <p class="gender">Gender: ${character.gender}</p>
                     <p class="height">Height: ${character.height}</p>
