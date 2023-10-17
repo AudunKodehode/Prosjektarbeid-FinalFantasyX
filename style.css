@@ -66,9 +66,11 @@ nav img {
 }
 @media screen and (max-width: 1000px) {
   body {
+    background-image: url(/public/backgroundMQ1000.jpg);
     background-repeat:no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: right;
   }
 }
 @media screen and (max-width: 800px) {
