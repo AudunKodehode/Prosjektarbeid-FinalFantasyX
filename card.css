@@ -117,6 +117,12 @@ option {
     display: block;
   } 
 }
+@media screen and (max-width: 900px) {
+  p.description{
+    transform: translateX(-100%);
+    transform: translateY(10%);
+  } 
+}
  @media screen and (max-width: 635px) {
   #ffContainer,#ffIIContainer,#ffIIIContainer,#ffIVContainer, #ffVContainer, #ffVIContainer, #ffVIIContainer, #ffVIIIContainer, #ffIXContainer, #ffXContainer, #ffXIIContainer, #ffXIIIContainer, #ffXVContainer {
     display: grid;

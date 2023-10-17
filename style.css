@@ -62,6 +62,7 @@ nav img {
   height: fit-content;
   border-radius: 40px;
 }
+
 @media screen and (max-width: 800px) {
   section {
     width: 100%;
