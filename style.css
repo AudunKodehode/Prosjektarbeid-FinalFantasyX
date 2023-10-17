@@ -28,7 +28,7 @@ html {
 }
 
 nav {
-  background-color: var(--nav-color);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   height: 150px;
   width: 100vw;
   display: flex;
@@ -36,7 +36,7 @@ nav {
   justify-content: center;
   padding-left: 5%;
   padding-right: 5%;
-  border: 2px solid white;
+  
 }
 
 nav h1 {
