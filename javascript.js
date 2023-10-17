@@ -21,6 +21,7 @@ gameSelector.addEventListener("change", function () {
 })
 let gameCount = 0;
 let response = "";
+
 const FFOutput = async (gameName, divID) => {
     gameCount++;
     if (response == ""){
